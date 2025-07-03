@@ -33,4 +33,4 @@ def get_latest_post():
         page.wait_for_timeout(5000)
         html = page.content()
         if "הצטרף לקבוצה" in html:
-            raise Exception("❌ נראה שלא בוצע התחברות לחשבון הפייס
+raise Exception("❌ נראה שלא בוצע התחברות לחשבון הפייסבוק.")
