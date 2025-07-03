@@ -23,9 +23,8 @@ jobs:
 
       - name: Run script
         env:
-          EMAIL_TO: "Edi94b@gmail.com"
-          EMAIL_FROM: "Edi94b@gmail.com"
-          EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           C_USER: ${{ secrets.C_USER }}
           XS: ${{ secrets.XS }}
         run: python3 main.py
